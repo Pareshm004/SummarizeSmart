@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Text Summarizer App</title>
+    <link rel="stylesheet" href="stylesheet.css">   
+  </head>
+  <body>
+    <h1><u>SummarizeSmart</u></h1>
+    <p> Introducing "SummarizeSmart" – your ultimate AI-powered text summarizer! Whether you're a student, professional, or avid reader, SummarizeSmart transforms lengthy documents into concise, easy-to-digest summaries in seconds. Say goodbye to information overload and hello to efficiency. </p>
+    <p> Simply paste your text into the text area below and click the "Submit" button. </p>
+    <div class="container">
+      <div class="text-box">
+        <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
+        <button id="submit-button" class="submit-button" >
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+      <div class="text-box"> 
+      <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here"> </textarea>
+      <button id="copy-button" class="copy-button" onclick="copySummary()" title="Copy to Clipboard">
+        <img src="images/copyicon.png" alt="Copy" class="copy-icon">
+      </button>
+      </div>
+    </div>
+    <section class="cta-section">
+      <div class="cta-content">
+        <div class="cta-text">
+        <h2>Liked using SummarizeSmart ?</h2>
+        <p>Check out the source code and the walkthrough in the link below!!</p>
+          <a href="https://github.com/Pareshm004/SummarizeSmart" class="cta-button" target="_blank" rel="noopener nofollow">GITHUB</a>
+        </div>
+        <img src="images/p2.jpg"></img>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
